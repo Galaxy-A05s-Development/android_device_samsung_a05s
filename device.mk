@@ -25,5 +25,9 @@ PRODUCT_PACKAGES += \
 BOARD_SHIPPING_API_LEVEL := 33
 PRODUCT_SHIPPING_API_LEVEL := 33
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/samsung/a05s/a05s-vendor.mk)
