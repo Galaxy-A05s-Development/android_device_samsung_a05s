@@ -598,7 +598,4 @@
         </interface>
         <fqname>@1.3::ISehSysInputDev/default</fqname>
     </hal>
-    <sepolicy>
-        <version>33.0</version>
-    </sepolicy>
 </manifest>
