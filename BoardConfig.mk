@@ -33,7 +33,7 @@ BOARD_KERNEL_CMDLINE := video=vfb:640x400,bpp=32,memsize=3072000
 BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image
 BOARD_BOOTCONFIG := androidboot.hardware=qcom androidboot.memcg=1 androidboot.load_modules_parallel=true androidboot.usbcontroller=4e00000.dwc3
 BOARD_KERNEL_IMAGE_NAME := Image.gz
-TARGET_KERNEL_CONFIG := gki_defconfig vendor/bengal_GKI.config
+TARGET_KERNEL_CONFIG := gki_defconfig vendor/bengal_GKI.config vendor/debugfs.config
 TARGET_KERNEL_SOURCE := kernel/samsung/sm6225
 
 # Metadata
