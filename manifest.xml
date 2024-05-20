@@ -1,13 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
-    Input:
-        manifest.xml
-        manifest.xml
-        manifest.xml
-        skeymint_v200_manifest.xml
-        gatekeeper_manifest.xml
-        manifest.xml
-        manifest.xml
-        fingerprint_manifest.xml
+     SPDX-FileCopyrightText: 2022 The Linux Foundation
+     SPDX-License-Identifier: BSD-3-Clause
 -->
 <manifest version="5.0" type="device" target-level="7">
     <hal format="hidl">
