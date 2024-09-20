@@ -1,0 +1,14 @@
+[
+  {
+    "repository": "android_kernel_samsung_sm6225",
+    "target_path": "kernel/samsung/sm6225"
+  },
+  {
+    "repository": "android_kernel_samsung_sm6225-devicetrees",
+    "target_path": "kernel/samsung/sm6225-devicetrees"
+  },
+  {
+    "repository": "android_kernel_samsung_sm6225-modules",
+    "target_path": "kernel/samsung/sm6225-modules"
+  }
+]
