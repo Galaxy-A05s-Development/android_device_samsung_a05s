@@ -463,28 +463,3 @@ case "$buildvariant" in
         echo "4 4 1 4" > /proc/sys/kernel/printk
         ;;
 esac
-
-#enable coresight for diag_mdlog_system over qdss
-chown -h root.oem_2902 /sys/devices/platform/soc/8048000.tmc/coresight-tmc-etr/block_size
-chmod 660 /sys/devices/platform/soc/8048000.tmc/coresight-tmc-etr/block_size
-chown -h root.oem_2902 /sys/devices/platform/soc/8048000.tmc/coresight-tmc-etr/buffer_size
-chmod 660 /sys/devices/platform/soc/8048000.tmc/coresight-tmc-etr/buffer_size
-chown -h root.oem_2902 /sys/bus/coresight/reset_source_sink
-chmod 660 /sys/bus/coresight/reset_source_sink
-
-# qcom case 06760649
-mkdir /config/stp-policy/coresight-stm:p_basic.policy
-chmod 660 /config/stp-policy/coresight-stm:p_basic.policy
-mkdir /config/stp-policy/coresight-stm:p_basic.policy/default
-chmod 660 /config/stp-policy/coresight-stm:p_basic.policy/default
-echo 0x10 > /sys/bus/coresight/devices/coresight-stm/traceid
-
-# disable ftrace log on coresight stm buffer 
-case "$buildvariant" in
-    "eng")
-        echo "0x1 0" > /sys/bus/coresight/devices/coresight-stm/entities
-        echo "0x2 0" > /sys/bus/coresight/devices/coresight-stm/entities
-        ;;
-esac
-# set the swlan0 for hotspot. 
-setprop ro.vendor.wifi.sap.interface swlan0
