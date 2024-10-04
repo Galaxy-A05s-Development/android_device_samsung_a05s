@@ -64,9 +64,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib/libsample1.so)
+        vendor/etc/sensors/hals.conf)
             [ "$2" = "" ] && return 0
-            sed -i 's|/data/misc/sample1|/data/misc/sample2|g' "${2}"
+            sed -i '/sensors.grip.so/d' "${2}"
             ;;
         vendor/lib64/libsample2.so)
             [ "$2" = "" ] && return 0
