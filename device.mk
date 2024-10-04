@@ -145,6 +145,9 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Storage
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti-v2

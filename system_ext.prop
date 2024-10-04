@@ -1,0 +1,5 @@
+# GPS
+persist.backup.ntpServer=0.pool.ntp.org
+
+# DPM
+persist.vendor.dpm.feature=11

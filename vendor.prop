@@ -1,0 +1,152 @@
+# Audio
+aaudio.hw_burst_min_usec=2000
+aaudio.mmap_exclusive_policy=2
+aaudio.mmap_policy=2
+af.fast_track_multiplier=1
+audio.deep_buffer.media=true
+audio.offload.min.duration.secs=30
+audio.offload.video=true
+audio.sys.mute.latency.factor=2
+audio.sys.routing.latency=0
+persist.vendor.audio.fluence.voicecomm=true
+ro.af.client_heap_size_kbyte=7168
+ro.config.vc_call_vol_steps=8
+vendor.audio.adm.buffering.ms=2
+vendor.audio.compress_capture.aac=true
+vendor.audio.compress_capture.enabled=true
+vendor.audio.gsl.shmem.dmaheap.uncached=true
+vendor.audio.offload.buffer.size.kb=32
+vendor.audio.volume.headset.gain.depcal=true
+vendor.audio_hal.period_size=192
+vendor.qc2audio.per_frame.flac.dec.enabled=true
+vendor.qc2audio.suspend.enabled=true
+
+# Audio - features
+vendor.audio.feature.a2dp_offload.enable=true
+vendor.audio.feature.afe_proxy.enable=true
+vendor.audio.feature.anc_headset.enable=true
+vendor.audio.feature.battery_listener.enable=true
+vendor.audio.feature.hfp.enable=true
+vendor.audio.feature.kpi_optimize.enable=true
+
+# Bluetooth
+bluetooth.device.class_of_device=90,2,12
+bluetooth.profile.a2dp.source.enabled=true
+bluetooth.profile.avrcp.controller.enabled=true
+bluetooth.profile.avrcp.target.enabled=true
+bluetooth.profile.gatt.enabled=true
+bluetooth.profile.hfp.ag.enabled=true
+bluetooth.profile.hid.device.enabled=true
+bluetooth.profile.hid.host.enabled=true
+bluetooth.profile.map.server.enabled=true
+bluetooth.profile.opp.enabled=true
+bluetooth.profile.pan.nap.enabled=true
+bluetooth.profile.pan.panu.enabled=true
+bluetooth.profile.pbap.server.enabled=true
+bluetooth.profile.sap.server.enabled=true
+persist.bluetooth.a2dp_offload.disabled=false
+persist.vendor.bt.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.qcom.bluetooth.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.soc=cherokee
+ro.bluetooth.a2dp_offload.supported=true
+vendor.qcom.bluetooth.soc=cherokee
+
+# Camera
+camera.disable_zsl_mode=1
+ro.camera.disableJpegR=true
+
+# Display
+vendor.display.camera_noc_efficiency_factor=0.70
+vendor.display.comp_mask=0
+vendor.display.disable_excl_rect=0
+vendor.display.disable_excl_rect_partial_fb=1
+vendor.display.disable_hw_recovery_dump=1
+vendor.display.disable_idle_time_video=1
+vendor.display.disable_idle_time_hdr=1
+vendor.display.disable_layer_stitch=0
+vendor.display.disable_rotator_ubwc=1
+vendor.display.disable_scaler=0
+vendor.display.enable_allow_idle_fallback=1
+vendor.display.enable_async_powermode=1
+vendor.display.enable_camera_smooth=1
+vendor.display.enable_null_display=0
+vendor.display.enable_optimize_refresh=1
+vendor.display.enable_posted_start_dyn=1
+vendor.display.idle_time=0
+vendor.display.normal_noc_efficiency_factor=0.85
+vendor.display.secure_preview_buffer_format=420_sp
+vendor.display.use_smooth_motion=1
+vendor.display.vds_allow_hwc=1
+vendor.gralloc.secure_preview_buffer_format=420_sp
+
+# DPM
+persist.vendor.dpm.vndr.feature=11
+persist.vendor.dpm.vndr.halservice.enable=1
+
+# DRM
+drm.service.enabled=true
+
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/persistent
+
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
+# Graphics
+debug.sf.high_fps_late_app_phase_offset_ns=1000000
+debug.sf.high_fps_late_sf_phase_offset_ns=-5000000
+debug.sf.high_fps_early_gl_phase_offset_ns=-5000000
+debug.sf.high_fps_early_phase_offset_ns=-5000000
+debug.sf.predict_hwc_composition_strategy=0
+debug.sf.treat_170m_as_sRGB=1
+persist.sys.sf.color_mode=9
+persist.sys.sf.color_saturation=1.0
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
+vendor.gralloc.disable_ubwc=0
+vendor.opengles.version=196610
+
+# IMS
+persist.vendor.rcs.singlereg.feature=1
+
+# Incremental FS
+ro.incremental.enable=1
+
+# Media
+debug.c2.use_dmabufheaps=1
+debug.stagefright.c2inputsurface=-1
+
+# OEM Unlock
+ro.oem_unlock_supported=1
+
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
+# Radio
+persist.vendor.radio.enableadvancedscan=true
+
+# Sensors
+persist.vendor.sensors.debug.ssc_qmi_debug=true
+persist.vendor.sensors.enable.bypass_worker=true
+persist.vendor.sensors.enable.rt_task=false
+persist.vendor.sensors.hal_trigger_ssr=false
+persist.vendor.sensors.support_direct_channel=false
+
+# SoC
+ro.soc.manufacturer=QTI
+
+# Surfaceflinger
+ro.surface_flinger.enable_frame_rate_override=false
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.surface_flinger.max_virtual_display_dimension=4096
+ro.surface_flinger.protected_contents=true
+ro.surface_flinger.set_touch_timer_ms=200
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.wcg_composition_dataspace=143261696
+
+# WiFi
+wifi.aware.interface=wifi-aware0
